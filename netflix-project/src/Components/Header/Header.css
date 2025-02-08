@@ -5,18 +5,15 @@
    transition: all 0.5;
    transition-timing-function: ease-in;
    z-index: 1;
-    
-    display: flex;
-    justify-content: center;
-    padding: 20px; 
-    /* background-color: #141414;  */
+   display: flex;
+   justify-content: center;
+   padding: 20px; 
   }
   
   .header_container {
     display: flex;
     justify-content: space-between; 
     width: 100%;
-    /* max-width: 1200px;  */
   }
   
   .header_left {
@@ -60,4 +57,15 @@
   }
 .header_right li:hover{
     color: #e50914;
+}
+/* 
+   .header_left ul,
+  .header_right ul{
+    display: table;
+    width: 100%;
+    text-align: center;
+  }  */
+.header_left ul li,
+.header_right ul li{
+  display: table-cell;
 }

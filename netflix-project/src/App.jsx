@@ -2,12 +2,13 @@ import { useState } from 'react'
 
 import './App.css'
 import Home from './pages/Home/Home'
+import Axios from './utils/axios'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
-    <div className='App'>
+    <div>
         <Home/>
     </div>
   )
