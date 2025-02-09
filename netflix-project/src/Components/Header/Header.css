@@ -1,71 +1,68 @@
 .header_outer_container {
-   position: sticky;
-   background-color: transparent;
-   height: 10vh;
-   transition: all 0.5;
-   transition-timing-function: ease-in;
-   z-index: 1;
-   display: flex;
-   justify-content: center;
-   padding: 20px; 
-  }
-  
-  .header_container {
-    display: flex;
-    justify-content: space-between; 
-    width: 100%;
-  }
-  
-  .header_left {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .header_left ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .header_left li {
-    margin-right: 20px; 
-    color: white; 
-  }
-  
-  .header_left img {
-    margin-right: 10px; 
-  }
-  .header_left li:hover {
-    color: #e50914; 
-    text-decoration: underline;
-    cursor: pointer; 
-  }
-  .header_right {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .header_right ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .header_right li {
-    margin-left: 20px; 
-    color: white; 
-  }
-.header_right li:hover{
-    color: #e50914;
+  width: 100%;
+  background-color: #141414; 
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
-/* 
-   .header_left ul,
-  .header_right ul{
-    display: table;
-    width: 100%;
-    text-align: center;
-  }  */
-.header_left ul li,
-.header_right ul li{
-  display: table-cell;
+.header_container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+.header_left ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+.header_left li {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header_left li:hover {
+  color: #e50914;  
+}
+.header_left li:first-child {
+  font-weight: normal;   
+}
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header_right ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+.header_right li {
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.header_right li:hover {
+  transform: scale(1.1);  
+}
+.header_left img {
+  object-fit: contain;
+}
+
+
