@@ -38,9 +38,9 @@ const Banner = () => {
                 {movie?.title || movie?.original_name}
                 </h1>
 
-                <div className="bunner_button">
-                    <button className="play">Play</button>
-                    <button className="my-list">My List</button>
+                <div className="bunner_buttons">
+                    <button className="bunner_button play">Play</button>
+                    <button className="bunner_button">My List</button>
                 </div>
                 <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
             </div>
