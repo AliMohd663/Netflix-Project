@@ -22,6 +22,7 @@
 }
 .header_left ul {
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
