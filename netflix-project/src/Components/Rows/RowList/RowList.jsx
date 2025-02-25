@@ -21,8 +21,8 @@ const RowList = () =>{
       />
       <Row title="TV Shows" fetchUrl={Requests.fetchTvShows} 
       />
-      <Row title="Documentaries" fetchUrl={Requests.fetchDocumentaries} 
-     />
+      <Row title="Family" fetchUrl={Requests.fetchFamily} 
+      />
     </>
   )
 }
